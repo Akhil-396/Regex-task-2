@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Regex Task</title>
+    <style>
+        #skills{
+         
+            display: block;
+            cursor: pointer;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="index.css">
+    <form id="myForm">
+    <div class="input-group">
+        
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input type="name" type="text" class="form-control" name="name" placeholder="Your Name">
+      </div>
+    <div>
+    <label for="address">Your Address</label>
+    <textarea name="address" id="address" cols="30" rows="10" style="width: 200px; height:150px; margin-top:20px; color:chartreuse; border-color: red;"></textarea>
+    </div>
+    <div>
+    <input type="checkbox" name="skills" id="skills">
+    <label for="skills" id="skills">React</label>
+    <input type="checkbox" name="skills" id="skills">
+    <label for="skills" id="skills">Node</label>
+    <input type="checkbox" name="skills" id="skills">
+    <label for="skills" id="skills">Python</label>
+</div>
+<div>
+    <input type="radio" name="gender" id="gender">
+    <label for="gender">Male</label>
+    <input type="radio" name="gender" id="gender">
+    <label for="gender">Female</label>
+</div>
+<h3 id="demo">Submitted</h3>
+<button type="submit" value="submit" onclick="myFunction()">Submit</button>
+</form>
+<script>
+    function myFunction() {
+      document.getElementById("myForm").submit();
+      alert('Form Submitted');
+      
+    }
+    </script>
+</body>
+</html>
